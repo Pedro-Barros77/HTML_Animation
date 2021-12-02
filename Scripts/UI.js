@@ -1,11 +1,13 @@
 function setUIInfo() {
     setFPS();
 
-    let label = document.getElementById("fpsLabel");
-    label.innerText
-        = "FPS: " + FPS
-        + ", angulo do sol: " + sunAngle.toFixed(2)
-        + ", Horas: " + getStringTime(getSceneTime(), true);
+    let lblTime = document.getElementById("lblTime");
+    let lblAngle = document.getElementById("lblAngle");
+    let lblFps = document.getElementById("lblFps");
+
+    lblTime.innerText = getStringTime(getSceneTime(), true);
+    lblAngle.innerText = sunAngle.toFixed(2);
+    lblFps.innerText = FPS;
 
     document.getElementById("speedLabel").innerText = "Velocidade: x" + sceneSpeed;
 }
