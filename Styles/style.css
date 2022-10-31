@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.hidden{
+    display: none;
+}
+
 body{
     background-color: rgb(2, 0, 8);
 }
@@ -24,14 +28,14 @@ body{
     font-weight: 500;
     margin: 0;
     font-size: large;
-    /* line-height: 1rem; */
 }
 
-.menuCol .label span{
+.menuCol span{
     color: rgb(29, 62, 190);
+    font-weight: 500;
+    font-size: large;
 }
 
-.menuCol .label .btnEdit{
-    width: auto;
-    height: auto;
+.menuCol .editInput{
+    width: 80px;
 }

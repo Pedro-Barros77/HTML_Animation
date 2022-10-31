@@ -44,17 +44,20 @@
             <div class="col menuCol">
                 <div class="row">
                     <div class="col">
-                        <p class="label">Horário: <span id="lblTime">12:00</span>
-                            <button class="btn noGap btnEdit"><i class="fas fa-pen noGap"></i></button>
-                        </p>
+                        <span class="label">Horário:</span>
+                        <input id="numTime" class="editInput" type="time" class="" placeholder="0.00" style="display: none;">
+                        <span id="lblTime">12:00</span>
+                        <button class="btn noGap btnEdit" onclick="editTime(this)"><i class="fas fa-pen"></i></button>
+
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <p class="label">Ângulo do Sol: <span id="lblAngle">0</span>
-                            <button class="btn noGap btnEdit"><i class="fas fa-pen noGap"></i></button>
-                        </p>
+                        <span class="label">Ângulo do Sol:</span>
+                        <input min="0" max="359" id="numAngle" class="editInput" type="number" class="" placeholder="0.00" style="display: none;">
+                        <span id="lblAngle">0</span>
+                        <button class="btn noGap btnEdit" onclick="editSunAngle(this)"><i class="fas fa-pen"></i></button>
                     </div>
                 </div>
 
@@ -67,6 +70,7 @@
         </div>
     </div>
 
+    <script src="./Scripts/input.js"></script>
     <script src="./Scripts/UI.js"></script>
     <script src="./Scripts/common.js"></script>
     <script src="./Scripts/drawing.js"></script>

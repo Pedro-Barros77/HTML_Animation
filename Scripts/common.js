@@ -1,13 +1,15 @@
+const BLANK_TIME = new Date(new Date().setTime(0, 0, 0, 0));
+const DAY = BLANK_TIME.setDate(2) - BLANK_TIME.setDate(1);
+
 function isBetween(value, start, end) {
     return value >= start && value <= end;
 }
 
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+const valOrDef = (value, defaultVal = 1) => value == 0 ? defaultVal : value;
+
 function getSceneTime() {
-    const BLANK_TIME = new Date(new Date().setTime(0, 0, 0, 0));
-    const DAY = BLANK_TIME.setDate(2) - BLANK_TIME.setDate(1);
-
     let sceneTime = (sunAngle * DAY) / 360;
-
 
     let dateTime = new Date(BLANK_TIME.setTime(sceneTime));
     return new Date(dateTime.setHours(dateTime.getHours() - 9));

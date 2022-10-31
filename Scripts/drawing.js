@@ -12,7 +12,7 @@ function drawSky() {
         setNextSkyColor(sunRiseSpan, true);
     }
 
-    builder.fillStyle = "rgb(" + R + ", " + G + ", " + B + ")";
+    builder.fillStyle = `rgb(${R},${G},${B})`;
     builder.fill();
     builder.closePath();
 }
