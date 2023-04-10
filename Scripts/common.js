@@ -5,6 +5,10 @@ function isBetween(value, start, end) {
     return value >= start && value <= end;
 }
 
+function fourthProportion(){
+    
+}
+
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 const valOrDef = (value, defaultVal = 1) => value == 0 ? defaultVal : value;
 

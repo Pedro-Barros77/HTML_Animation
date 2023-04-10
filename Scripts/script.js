@@ -13,8 +13,8 @@ let dayR = 185, dayG = 248, dayB = 255;
 
 let sunSetStart = 20;
 let sunSetEnd = 95;
-let sunRiseStart = 265;
-let sunRiseEnd = 360;
+let sunRiseStart = 245;
+let sunRiseEnd = 340;
 
 let R = dayR
 let G = dayG;
